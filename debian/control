@@ -1,0 +1,49 @@
+Source: datadiff
+Section: python
+Priority: optional
+Maintainer: Jayden Hewer <jfh13@students.waikato.ac.nz>
+Build-Depends: debhelper (>=9),
+               dh-python,
+               python-all (>= 2.6.6-3~),
+               python-nose,
+               python-setuptools,
+               python-six,
+               python3-nose,
+               python3-all,
+               python3-setuptools,
+               python3-six,
+Standards-Version: 3.9.6
+Homepage: https://pypi.python.org/pypi/datadiff/2.0.0
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+#Vcs-Git: git://anonscm.debian.org/collab-maint/datadiff.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/datadiff.git
+
+Package: python-datadiff
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Suggests: python-datadiff-doc
+Description: Allows for human readable objects (Python 2)
+ Allows for objects in Python to be displayed in a way
+ that is easier to read. 
+ .
+ This package installs the library for Python 2.
+
+Package: python3-datadiff
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python-datadiff-doc
+Description: Allows for human readable objects (Python 3)
+ Allows for objects in Python to be displayed in a way                 
+ that is easier to read.
+ .
+ This package installs the library for Python 3.
+
+Package: python-datadiff-doc
+Architecture: all
+Section: doc
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Description: documentation for python-datadiff (common documentation)
+ Basic documentation for python-datadiff.
+ .
+ This is the common documentation package.
